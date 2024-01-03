@@ -1,0 +1,36 @@
+go 1.20
+
+use (
+    ./weather-forecast
+    ./cars-assemble
+    ./welcome-to-tech-palace
+    ./party-robot
+    ./vehicle-purchase
+    ./blackjack
+    ./need-for-speed
+    ./card-tricks
+    ./bird-watcher
+    ./lasagna-master
+    ./booking-up-for-beauty
+    ./gross-store
+    ./chessboard
+    ./logs-logs-logs
+    ./election-day
+    ./elons-toys
+    ./airport-robot
+    ./sorting-room
+    ./the-farm
+    ./census
+    ./interest-is-interesting
+    ./expenses
+    ./animal-magic
+    ./parsing-log-files
+    ./meteorology
+    ./two-fer
+    ./raindrops
+    ./collatz-conjecture
+    ./gigasecond
+    ./scrabble-score
+    ./leap
+    ./isogram
+)
