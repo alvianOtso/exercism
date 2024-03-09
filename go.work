@@ -33,4 +33,5 @@ use (
     ./scrabble-score
     ./leap
     ./isogram
+    ./difference-of-squares
 )
