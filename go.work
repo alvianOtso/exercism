@@ -34,4 +34,6 @@ use (
     ./leap
     ./isogram
     ./difference-of-squares
+    ./luhn
+    ./resistor-color
 )
