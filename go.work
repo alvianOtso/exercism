@@ -36,4 +36,5 @@ use (
     ./difference-of-squares
     ./luhn
     ./resistor-color
+    ./space-age
 )
