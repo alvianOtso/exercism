@@ -37,4 +37,5 @@ use (
     ./luhn
     ./resistor-color
     ./space-age
+    ./nucleotide-count
 )
