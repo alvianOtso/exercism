@@ -39,4 +39,5 @@ use (
     ./space-age
     ./nucleotide-count
     ./rna-transcription
+    ./pangram
 )
