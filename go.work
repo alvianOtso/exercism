@@ -40,4 +40,5 @@ use (
     ./nucleotide-count
     ./rna-transcription
     ./pangram
+    ./reverse-string
 )
