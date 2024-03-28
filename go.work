@@ -41,4 +41,5 @@ use (
     ./rna-transcription
     ./pangram
     ./reverse-string
+    ./darts
 )
