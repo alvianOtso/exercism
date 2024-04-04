@@ -42,4 +42,6 @@ use (
     ./pangram
     ./reverse-string
     ./darts
+    ./dnd-character
+    ./etl
 )
