@@ -44,4 +44,6 @@ use (
     ./darts
     ./dnd-character
     ./etl
+    ./bob
+    ./grains
 )
