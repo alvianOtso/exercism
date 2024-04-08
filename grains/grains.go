@@ -1,9 +1,16 @@
 package grains
 
+import (
+	"errors"
+)
+
 func Square(number int) (uint64, error) {
-	panic("Please implement the Square function")
+	if number > 0 && number < 65 {
+		return 1 << (number - 1), nil
+	}
+	return 0, errors.New("invalid")
 }
 
 func Total() uint64 {
-	panic("Please implement the Total function")
+	return 1<<64 - 1
 }
