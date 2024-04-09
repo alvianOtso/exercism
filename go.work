@@ -46,4 +46,6 @@ use (
     ./etl
     ./bob
     ./grains
+    ./roman-numerals
+    ./isbn-verifier
 )
