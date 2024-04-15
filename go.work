@@ -48,4 +48,5 @@ use (
     ./grains
     ./roman-numerals
     ./isbn-verifier
+    ./rotational-cipher
 )
