@@ -49,4 +49,8 @@ use (
     ./roman-numerals
     ./isbn-verifier
     ./rotational-cipher
+    ./resistor-color-duo
+    ./clock
+    ./triangle
+    ./proverb
 )
