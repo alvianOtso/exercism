@@ -1,24 +1,24 @@
 package main
 
 import (
+	"errors"
 	"fmt"
-	"strings"
 )
 
-func IsIsogram(word string) bool {
-	word = strings.ToLower(word)
-	isogram := true
-	for _, r := range word {
-		fmt.Println(string(r), strings.Count(word, string(r)))
-		if strings.Count(word, string(r)) > 1 {
-			isogram = false
-			break
-		}
+func FromRNA(rna string) ([]string, error) {
+	codons := []string{}
+	if len(rna) % 3 != 0 {
+		return codons, errors.New("invalid rna")
+	}	
+	
+	for i := 0; i < len(rna); i += 3 {
+		codon := rna[i : i+3]
+		codons = append(codons, codon)
 	}
 
-	return isogram
+	return codons, nil
 }
 func main() {
-	b := IsIsogram("six-year-old")
-	fmt.Println(b)
+	b, err := FromRNA("AUGUUUUCUUAAAU")
+	fmt.Println(b, err)
 }
