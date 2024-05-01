@@ -1,15 +1,18 @@
-package main
+package wordcount
 
 import (
-	"fmt"
 	"regexp"
 	"strings"
 )
 
-func main() {
+type Frequency map[string]int
+
+func WordCount(phrase string) Frequency {
+	wordMap := Frequency{}
 	reg := regexp.MustCompile(`\w+('\w+)?`)
-	phrase := `that's's kol"a`
+	
 	for _, word := range reg.FindAllString(strings.ToLower(phrase), -1) {
-		fmt.Println(word)
+		wordMap[word]++
 	}
+	return wordMap
 }

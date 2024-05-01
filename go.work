@@ -55,4 +55,6 @@ use (
     ./proverb
     ./anagram
     ./protein-translation
+    ./word-count
+    ./largest-series-product
 )
