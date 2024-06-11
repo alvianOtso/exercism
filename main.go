@@ -2,14 +2,28 @@ package main
 
 import (
 	"fmt"
-	"regexp"
-	"strings"
 )
 
 func main() {
-	reg := regexp.MustCompile(`\w+('\w+)?`)
-	phrase := `that's's kol"a`
-	for _, word := range reg.FindAllString(strings.ToLower(phrase), -1) {
-		fmt.Println(word)
+	fmt.Println(prime(2))
+}
+
+func prime(n int) bool {
+	if n <= 1 {
+		return false
 	}
+	if n <= 3 {
+		return true
+	}
+
+	if n%2 == 0 || n%3 == 0 {
+		return false
+	}
+
+	for i := 5; i*i <= n; i += 6 {
+		if n%i == 0 || n%(i+2) == 0 {
+			return false
+		}
+	}
+	return true
 }
